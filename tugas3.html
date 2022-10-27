@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".fadeout").click(function() {
+            $("#kotak1").hide("slow");
+        });
+
+        $(".fadein").click(function() {
+                $("#kotak1").show("slow");
+            }); 
+
+        $(".fadeto").click(function(){
+            $("#kotak1").fadeTo("slow", 0.3);
+            });
+    });
+    </script>
+<style>
+    #kotak1{
+        background-color: yellow;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+    }
+    #kembali{
+            background-color: green; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+            cursor: pointer;
+            margin: 4px 2px;
+        }
+</style>
+</head>
+
+
+<body>
+    <div id="kotak1"></div>
+    <button class="fadeout">fade out</button>
+    <button class="fadein">fade in</button>
+    <button class="fadeto">fade to 0.3</button>
+    <a href="index.html"><button id="kembali">Kembali ke Home</button></a>
+</body>
+</html>

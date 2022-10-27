@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+            $("div").addClass("kuning");
+            if($("#kotak1").hasClass("kuning")){
+                $("#kotak1").dblclick(function(){
+                    $("#kotak1").toggleClass("merah");
+                });
+            }else{
+                $("#kotak1").dblclick(function(){
+                    $("#kotak1").toggleClass("kuning");
+                });
+            };
+            if($("#kotak2").hasClass("kuning")){
+                $("#kotak2").dblclick(function(){
+                    $("#kotak2").toggleClass("merah");
+                });
+            }else{
+                $("#kotak2").dblclick(function(){
+                    $("#kotak2").toggleClass("kuning");
+                });
+            };
+            if($("#kotak3").hasClass("kuning")){
+                $("#kotak3").dblclick(function(){
+                    $("#kotak3").toggleClass("merah");
+                });
+            }else{
+                $("#kotak3").dblclick(function(){
+                    $("#kotak3").toggleClass("kuning");
+                });
+            };
+            if($("#kotak4").hasClass("kuning")){
+                $("#kotak4").dblclick(function(){
+                    $("#kotak4").toggleClass("merah");
+                });
+            }else{
+                $("#kotak4").dblclick(function(){
+                    $("#kotak4").toggleClass("kuning");
+                });
+            };
+        });
+    </script>
+    <style type="text/css">
+        div{
+            margin-inline: 5px;
+        }
+        .kuning{
+            background-color:yellow;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .merah{
+            background-color:red;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        #kembali{
+            background-color: green; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            display: block;
+            cursor: pointer;
+            margin: 4px 2px;
+        }
+    </style>
+</head>
+<body>
+    <p>Klik 2x pada setiap kotak untuk mengubah warnanya</p>
+    <div id="kotak1"></div>
+    <div id="kotak2"></div>
+    <div id="kotak3"></div>
+    <div id="kotak4"></div>
+    <a href="index.html"><button id="kembali">Kembali ke Home</button></a>
+</body>
+</html>
